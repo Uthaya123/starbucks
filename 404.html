@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Page Not Found - Starbucks Coffee Company</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <a href="index.html">
+                    <img src="img/logo.svg" alt="Starbucks" />
+                </a>
+            </div>
+
+            <ul class="navbar-nav-left">
+                <li>
+                    <a href="menu.html">Menu</a>
+                </li>
+                <li>
+                    <a href="rewards.html">Rewards</a>
+                </li>
+                <li>
+                    <a href="gift-cards.html">Gift Cards</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav-right">
+                <li>
+                    <a href="store.html">
+                        <img src="img/marker.svg" alt="" />
+                        <span>Find a store</span>
+                    </a>
+                </li>
+                <li><button class="btn btn-dark-outline">Sign in</button></li>
+                <li><button class="btn btn-dark">Join now</button></li>
+            </ul>
+
+            <button type="button" class="hamburger" id="menu-btn">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden" id="menu">
+        <ul>
+            <li>
+                <a href="menu.html">Menu</a>
+            </li>
+            <li>
+                <a href="rewards.html">Rewards</a>
+            </li>
+            <li>
+                <a href="gift-cards.html">Gift Cards</a>
+            </li>
+        </ul>
+
+        <div class="mobile-menu-bottom">
+            <button class="btn btn-dark-outline">Sign in</button>
+            <button class="btn btn-dark">Join now</button>
+            <div>
+                <a href="store.html">
+                    <img src="img/marker.svg" alt="" />
+                    <span>Find a store</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 404 Content -->
+    <section class="hero" style="background: linear-gradient(135deg, #d50032 0%, #ff4466 100%); min-height: 600px;">
+        <div class="hero-content" style="text-align: center;">
+            <div style="font-size: 120px; font-weight: 700; color: #fff; margin-bottom: 20px; line-height: 1;">
+                404
+            </div>
+            <h1 class="hero-title" style="color: #fff; margin-bottom: 20px;">Page Not Found</h1>
+            <p class="hero-subtitle" style="color: #fff; margin-bottom: 40px;">
+                Oops! It looks like this page has been brewed away. Let's get you back on track.
+            </p>
+            <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                <a href="index.html" class="btn btn-hero" style="padding: 14px 35px; background: #fff; color: #d50032;">Back to Home</a>
+                <a href="menu.html" class="btn btn-light-outline" style="padding: 14px 35px;">Browse Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Helpful Links -->
+    <section class="box bg-extra py-lg" style="padding: 50px 30px;">
+        <div class="box-inner" style="max-width: 1000px; margin: 0 auto;">
+            
+            <h2 class="text-md" style="text-align: center; color: #000; margin-bottom: 40px;">Here's Where You Can Go</h2>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-bottom: 60px;">
+                <div style="padding: 30px; background: #fff; border-radius: 8px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <div style="font-size: 40px; margin-bottom: 15px;">☕</div>
+                    <h3 style="font-size: 20px; color: #006241; margin-bottom: 10px; font-weight: 700;">Menu</h3>
+                    <p style="color: #666; margin-bottom: 20px; font-size: 14px;">Explore our delicious drinks and food items</p>
+                    <a href="menu.html" class="btn btn-dark" style="padding: 10px 20px;">View Menu</a>
+                </div>
+
+                <div style="padding: 30px; background: #fff; border-radius: 8px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <div style="font-size: 40px; margin-bottom: 15px;">⭐</div>
+                    <h3 style="font-size: 20px; color: #006241; margin-bottom: 10px; font-weight: 700;">Rewards</h3>
+                    <p style="color: #666; margin-bottom: 20px; font-size: 14px;">Earn stars with every purchase</p>
+                    <a href="rewards.html" class="btn btn-dark" style="padding: 10px 20px;">Learn More</a>
+                </div>
+
+                <div style="padding: 30px; background: #fff; border-radius: 8px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <div style="font-size: 40px; margin-bottom: 15px;">🎁</div>
+                    <h3 style="font-size: 20px; color: #006241; margin-bottom: 10px; font-weight: 700;">Gift Cards</h3>
+                    <p style="color: #666; margin-bottom: 20px; font-size: 14px;">Perfect gift for any occasion</p>
+                    <a href="gift-cards.html" class="btn btn-dark" style="padding: 10px 20px;">Shop Now</a>
+                </div>
+
+                <div style="padding: 30px; background: #fff; border-radius: 8px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <div style="font-size: 40px; margin-bottom: 15px;">📍</div>
+                    <h3 style="font-size: 20px; color: #006241; margin-bottom: 10px; font-weight: 700;">Find a Store</h3>
+                    <p style="color: #666; margin-bottom: 20px; font-size: 14px;">Locate your nearest Starbucks</p>
+                    <a href="store.html" class="btn btn-dark" style="padding: 10px 20px;">Find Store</a>
+                </div>
+
+                <div style="padding: 30px; background: #fff; border-radius: 8px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <div style="font-size: 40px; margin-bottom: 15px;">💼</div>
+                    <h3 style="font-size: 20px; color: #006241; margin-bottom: 10px; font-weight: 700;">Careers</h3>
+                    <p style="color: #666; margin-bottom: 20px; font-size: 14px;">Join our team and grow with us</p>
+                    <a href="careers.html" class="btn btn-dark" style="padding: 10px 20px;">See Jobs</a>
+                </div>
+
+                <div style="padding: 30px; background: #fff; border-radius: 8px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <div style="font-size: 40px; margin-bottom: 15px;">💬</div>
+                    <h3 style="font-size: 20px; color: #006241; margin-bottom: 10px; font-weight: 700;">Contact Us</h3>
+                    <p style="color: #666; margin-bottom: 20px; font-size: 14px;">We're here to help answer your questions</p>
+                    <a href="contact.html" class="btn btn-dark" style="padding: 10px 20px;">Get Help</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="social">
+                <a href="https://spotify.com">
+                    <img src="./img/social-spotify.svg" alt="" />
+                </a>
+                <a href="https://facebook.com">
+                    <img src="./img/social-facebook.svg" alt="" />
+                </a>
+                <a href="https://pinterest.com">
+                    <img src="./img/social-pinterest.svg" alt="" />
+                </a>
+                <a href="https://instagram.com">
+                    <img src="./img/social-instagram.svg" alt="" />
+                </a>
+                <a href="https://youtube.com">
+                    <img src="./img/social-youtube.svg" alt="" />
+                </a>
+                <a href="https://twitter.com">
+                    <img src="./img/social-twitter.svg" alt="" />
+                </a>
+            </div>
+            <p>© 2025 Starbucks Coffee Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

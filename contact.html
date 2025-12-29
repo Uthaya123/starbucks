@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact Us - Starbucks Coffee Company</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <a href="index.html">
+                    <img src="img/logo.svg" alt="Starbucks" />
+                </a>
+            </div>
+
+            <ul class="navbar-nav-left">
+                <li>
+                    <a href="menu.html">Menu</a>
+                </li>
+                <li>
+                    <a href="rewards.html">Rewards</a>
+                </li>
+                <li>
+                    <a href="gift-cards.html">Gift Cards</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav-right">
+                <li>
+                    <a href="store.html">
+                        <img src="img/marker.svg" alt="" />
+                        <span>Find a store</span>
+                    </a>
+                </li>
+                <li><button class="btn btn-dark-outline">Sign in</button></li>
+                <li><button class="btn btn-dark">Join now</button></li>
+            </ul>
+
+            <button type="button" class="hamburger" id="menu-btn">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden" id="menu">
+        <ul>
+            <li>
+                <a href="menu.html">Menu</a>
+            </li>
+            <li>
+                <a href="rewards.html">Rewards</a>
+            </li>
+            <li>
+                <a href="gift-cards.html">Gift Cards</a>
+            </li>
+        </ul>
+
+        <div class="mobile-menu-bottom">
+            <button class="btn btn-dark-outline">Sign in</button>
+            <button class="btn btn-dark">Join now</button>
+            <div>
+                <a href="store.html">
+                    <img src="img/marker.svg" alt="" />
+                    <span>Find a store</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background: linear-gradient(135deg, #006241 0%, #00a862 100%);">
+        <div class="hero-content">
+            <h1 class="hero-title">Contact Us</h1>
+            <p class="hero-subtitle">We'd love to hear from you. Get in touch with our team.</p>
+        </div>
+    </section>
+
+    <!-- Contact Page Content -->
+    <section class="box bg-extra py-lg" style="padding: 50px 30px;">
+        <div class="box-inner" style="max-width: 1000px; margin: 0 auto;">
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-bottom: 60px;">
+                <div style="padding: 30px; background: #fff; border-radius: 8px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <div style="font-size: 40px; margin-bottom: 15px;">📞</div>
+                    <h3 style="font-size: 20px; color: #006241; margin-bottom: 10px; font-weight: 700;">Call Us</h3>
+                    <p style="color: #666; margin-bottom: 10px;">1-800-STARBUCKS</p>
+                    <p style="color: #999; font-size: 14px;">Mon-Sun: 6 AM - 9 PM EST</p>
+                </div>
+
+                <div style="padding: 30px; background: #fff; border-radius: 8px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <div style="font-size: 40px; margin-bottom: 15px;">✉️</div>
+                    <h3 style="font-size: 20px; color: #006241; margin-bottom: 10px; font-weight: 700;">Email Us</h3>
+                    <p style="color: #666; margin-bottom: 10px;">customerservice@starbucks.com</p>
+                    <p style="color: #999; font-size: 14px;">Response within 24 hours</p>
+                </div>
+
+                <div style="padding: 30px; background: #fff; border-radius: 8px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <div style="font-size: 40px; margin-bottom: 15px;">💬</div>
+                    <h3 style="font-size: 20px; color: #006241; margin-bottom: 10px; font-weight: 700;">Chat with Us</h3>
+                    <p style="color: #666; margin-bottom: 10px;">Live chat support available</p>
+                    <p style="color: #999; font-size: 14px;">7 AM - 9 PM EST daily</p>
+                </div>
+            </div>
+
+            <h2 class="text-xl" style="text-align: center; color: #000; margin-bottom: 40px;">Send us a Message</h2>
+
+            <form id="contact-form" style="max-width: 600px; margin: 0 auto; background: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                <div style="margin-bottom: 20px;">
+                    <label style="display: block; font-weight: 600; color: #333; margin-bottom: 8px;">Full Name</label>
+                    <input type="text" id="contact-name" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px; font-family: inherit;">
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <label style="display: block; font-weight: 600; color: #333; margin-bottom: 8px;">Email Address</label>
+                    <input type="email" id="contact-email" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px; font-family: inherit;">
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <label style="display: block; font-weight: 600; color: #333; margin-bottom: 8px;">Subject</label>
+                    <select style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px; font-family: inherit;">
+                        <option>General Inquiry</option>
+                        <option>Product Feedback</option>
+                        <option>Store Experience</option>
+                        <option>App Issues</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <label style="display: block; font-weight: 600; color: #333; margin-bottom: 8px;">Message</label>
+                    <textarea id="contact-message" required rows="6" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px; font-family: inherit; resize: vertical;"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-dark" style="width: 100%; padding: 14px;">Send Message</button>
+            </form>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="index.html" class="btn btn-dark" style="padding: 12px 30px;">Back to Home</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="social">
+                <a href="https://spotify.com">
+                    <img src="./img/social-spotify.svg" alt="" />
+                </a>
+                <a href="https://facebook.com">
+                    <img src="./img/social-facebook.svg" alt="" />
+                </a>
+                <a href="https://pinterest.com">
+                    <img src="./img/social-pinterest.svg" alt="" />
+                </a>
+                <a href="https://instagram.com">
+                    <img src="./img/social-instagram.svg" alt="" />
+                </a>
+                <a href="https://youtube.com">
+                    <img src="./img/social-youtube.svg" alt="" />
+                </a>
+                <a href="https://twitter.com">
+                    <img src="./img/social-twitter.svg" alt="" />
+                </a>
+            </div>
+            <p>© 2025 Starbucks Coffee Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

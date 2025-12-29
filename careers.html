@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Careers - Starbucks Coffee Company</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <a href="index.html">
+                    <img src="img/logo.svg" alt="Starbucks" />
+                </a>
+            </div>
+
+            <ul class="navbar-nav-left">
+                <li>
+                    <a href="menu.html">Menu</a>
+                </li>
+                <li>
+                    <a href="rewards.html">Rewards</a>
+                </li>
+                <li>
+                    <a href="gift-cards.html">Gift Cards</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav-right">
+                <li>
+                    <a href="store.html">
+                        <img src="img/marker.svg" alt="" />
+                        <span>Find a store</span>
+                    </a>
+                </li>
+                <li><button class="btn btn-dark-outline">Sign in</button></li>
+                <li><button class="btn btn-dark">Join now</button></li>
+            </ul>
+
+            <button type="button" class="hamburger" id="menu-btn">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden" id="menu">
+        <ul>
+            <li>
+                <a href="menu.html">Menu</a>
+            </li>
+            <li>
+                <a href="rewards.html">Rewards</a>
+            </li>
+            <li>
+                <a href="gift-cards.html">Gift Cards</a>
+            </li>
+        </ul>
+
+        <div class="mobile-menu-bottom">
+            <button class="btn btn-dark-outline">Sign in</button>
+            <button class="btn btn-dark">Join now</button>
+            <div>
+                <a href="store.html">
+                    <img src="img/marker.svg" alt="" />
+                    <span>Find a store</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background: linear-gradient(135deg, #006241 0%, #00a862 100%);">
+        <div class="hero-content">
+            <h1 class="hero-title">Join Our Team</h1>
+            <p class="hero-subtitle">Build your career with Starbucks - grow, learn, and thrive.</p>
+        </div>
+    </section>
+
+    <!-- Careers Content -->
+    <section class="box bg-extra py-lg" style="padding: 50px 30px;">
+        <div class="box-inner" style="max-width: 1200px; margin: 0 auto;">
+            
+            <div style="background: #006241; color: #fff; padding: 40px; border-radius: 8px; text-align: center; margin-bottom: 60px;">
+                <h2 class="text-md" style="color: #fff; margin-bottom: 20px;">Why Work at Starbucks?</h2>
+                <p style="font-size: 16px; margin-bottom: 25px; opacity: 0.95;">
+                    We believe in creating a welcoming workplace where partners can be their authentic selves. Join thousands of team members worldwide.
+                </p>
+                <a href="#jobs" class="btn btn-hero" style="background: #fff; color: #006241;">View Job Openings</a>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-bottom: 60px;">
+                <div style="padding: 30px; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <h3 style="font-size: 20px; color: #006241; margin-bottom: 10px; font-weight: 700;">💼 Career Growth</h3>
+                    <p style="color: #666; line-height: 1.6;">
+                        Develop your skills and advance your career with continuous training, mentorship, and development opportunities.
+                    </p>
+                </div>
+
+                <div style="padding: 30px; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <h3 style="font-size: 20px; color: #006241; margin-bottom: 10px; font-weight: 700;">🏥 Benefits</h3>
+                    <p style="color: #666; line-height: 1.6;">
+                        Comprehensive health insurance, dental, vision, 401(k) matching, and paid time off from day one.
+                    </p>
+                </div>
+
+                <div style="padding: 30px; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <h3 style="font-size: 20px; color: #006241; margin-bottom: 10px; font-weight: 700;">🎓 Education</h3>
+                    <p style="color: #666; line-height: 1.6;">
+                        Free college tuition through our College Achievement Plan for eligible partners.
+                    </p>
+                </div>
+
+                <div style="padding: 30px; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <h3 style="font-size: 20px; color: #006241; margin-bottom: 10px; font-weight: 700;">🌍 Inclusion</h3>
+                    <p style="color: #666; line-height: 1.6;">
+                        A diverse, inclusive culture where every partner is respected and valued for who they are.
+                    </p>
+                </div>
+
+                <div style="padding: 30px; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <h3 style="font-size: 20px; color: #006241; margin-bottom: 10px; font-weight: 700;">☕ Partner Perks</h3>
+                    <p style="color: #666; line-height: 1.6;">
+                        Free drinks, food discounts, and exclusive partner benefits at Starbucks locations.
+                    </p>
+                </div>
+
+                <div style="padding: 30px; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <h3 style="font-size: 20px; color: #006241; margin-bottom: 10px; font-weight: 700;">🤝 Community</h3>
+                    <p style="color: #666; line-height: 1.6;">
+                        Be part of a community that supports each other and makes a positive impact locally.
+                    </p>
+                </div>
+            </div>
+
+            <h2 id="jobs" class="text-xl" style="text-align: center; color: #000; margin-bottom: 40px;">Current Job Openings</h2>
+
+            <div style="display: grid; gap: 20px; margin-bottom: 40px;">
+                <div style="padding: 25px; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-left: 4px solid #006241;">
+                    <h3 style="font-size: 18px; color: #006241; margin-bottom: 8px; font-weight: 700;">Barista</h3>
+                    <p style="color: #666; margin-bottom: 8px; font-size: 14px;">📍 Multiple Locations | 🕐 Full-time/Part-time</p>
+                    <p style="color: #333; margin-bottom: 15px;">
+                        Create amazing drinks and deliver exceptional customer service. No experience necessary - we provide full training!
+                    </p>
+                    <button class="btn btn-dark" style="padding: 10px 20px;">Apply Now</button>
+                </div>
+
+                <div style="padding: 25px; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-left: 4px solid #006241;">
+                    <h3 style="font-size: 18px; color: #006241; margin-bottom: 8px; font-weight: 700;">Shift Supervisor</h3>
+                    <p style="color: #666; margin-bottom: 8px; font-size: 14px;">📍 New York, California, Texas | 🕐 Full-time</p>
+                    <p style="color: #333; margin-bottom: 15px;">
+                        Lead a team, ensure operational excellence, and create a great experience for customers and partners.
+                    </p>
+                    <button class="btn btn-dark" style="padding: 10px 20px;">Apply Now</button>
+                </div>
+
+                <div style="padding: 25px; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-left: 4px solid #006241;">
+                    <h3 style="font-size: 18px; color: #006241; margin-bottom: 8px; font-weight: 700;">Store Manager</h3>
+                    <p style="color: #666; margin-bottom: 8px; font-size: 14px;">📍 Various Locations | 🕐 Full-time</p>
+                    <p style="color: #333; margin-bottom: 15px;">
+                        Manage store operations, develop partners, and drive business results while maintaining our customer-focused culture.
+                    </p>
+                    <button class="btn btn-dark" style="padding: 10px 20px;">Apply Now</button>
+                </div>
+
+                <div style="padding: 25px; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-left: 4px solid #006241;">
+                    <h3 style="font-size: 18px; color: #006241; margin-bottom: 8px; font-weight: 700;">Digital Marketing Specialist</h3>
+                    <p style="color: #666; margin-bottom: 8px; font-size: 14px;">📍 Seattle, WA | 🕐 Full-time</p>
+                    <p style="color: #333; margin-bottom: 15px;">
+                        Drive digital campaigns, analyze data, and help shape our brand's online presence. Marketing expertise required.
+                    </p>
+                    <button class="btn btn-dark" style="padding: 10px 20px;">Apply Now</button>
+                </div>
+
+                <div style="padding: 25px; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-left: 4px solid #006241;">
+                    <h3 style="font-size: 18px; color: #006241; margin-bottom: 8px; font-weight: 700;">Software Engineer</h3>
+                    <p style="color: #666; margin-bottom: 8px; font-size: 14px;">📍 Remote | 🕐 Full-time</p>
+                    <p style="color: #333; margin-bottom: 15px;">
+                        Build innovative solutions that power our mobile app and digital experiences. Experience with JavaScript, React required.
+                    </p>
+                    <button class="btn btn-dark" style="padding: 10px 20px;">Apply Now</button>
+                </div>
+            </div>
+
+            <div style="text-align: center;">
+                <a href="index.html" class="btn btn-dark" style="padding: 12px 30px;">Back to Home</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="social">
+                <a href="https://spotify.com">
+                    <img src="./img/social-spotify.svg" alt="" />
+                </a>
+                <a href="https://facebook.com">
+                    <img src="./img/social-facebook.svg" alt="" />
+                </a>
+                <a href="https://pinterest.com">
+                    <img src="./img/social-pinterest.svg" alt="" />
+                </a>
+                <a href="https://instagram.com">
+                    <img src="./img/social-instagram.svg" alt="" />
+                </a>
+                <a href="https://youtube.com">
+                    <img src="./img/social-youtube.svg" alt="" />
+                </a>
+                <a href="https://twitter.com">
+                    <img src="./img/social-twitter.svg" alt="" />
+                </a>
+            </div>
+            <p>© 2025 Starbucks Coffee Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

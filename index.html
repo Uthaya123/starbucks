@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Starbucks Coffee Company</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="navbar-brand">
+          <a href="index.html">
+            <img src="img/logo.svg" alt="Starbucks" />
+          </a>
+        </div>
+
+        <ul class="navbar-nav-left">
+          <li>
+            <a href="menu.html">Menu</a>
+          </li>
+          <li>
+            <a href="rewards.html">Rewards</a>
+          </li>
+          <li>
+            <a href="gift-cards.html">Gift Cards</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav-right">
+          <li>
+            <a href="store.html">
+              <img src="img/marker.svg" alt="" />
+              <span>Find a store</span>
+            </a>
+          </li>
+          <li><button class="btn btn-dark-outline">Sign in</button></li>
+          <li><button class="btn btn-dark">Join now</button></li>
+        </ul>
+
+        <!-- Hamburger Menu -->
+        <button type="button" class="hamburger" id="menu-btn">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Your Favorites Are Here</h1>
+        <p class="hero-subtitle">Order ahead and pick up at your nearest store.</p>
+        <button class="btn btn-hero">Order Now</button>
+      </div>
+    </section>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden" id="menu">
+      <ul>
+        <li>
+          <a href="menu.html">Menu</a>
+        </li>
+        <li>
+          <a href="rewards.html">Rewards</a>
+        </li>
+        <li>
+          <a href="gift-cards.html">Gift Cards</a>
+        </li>
+      </ul>
+
+      <div class="mobile-menu-bottom">
+        <button class="btn btn-dark-outline">Sign in</button>
+        <button class="btn btn-dark">Join now</button>
+        <div>
+          <a href="store.html">
+            <img src="img/marker.svg" alt="" />
+            <span>Find a store</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Box A -->
+    <section class="box box-a bg-primary text-center py-md">
+      <div class="box-inner">
+        <h2 class="text-xl">Join Rewards & Earn Free Drinks</h2>
+        <p class="text-md">
+          Earn stars with every purchase and get free coffee, tea, food and more.
+          <a href="#">Learn more</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Box B -->
+    <section class="box box-b bg-secondary grid-col-2">
+      <img src="img/box-b.png" alt="Featured Drink" />
+      <div class="box-text">
+        <h2 class="text-xl">New Holiday Favorites</h2>
+        <p class="text-md">
+          Discover our seasonal collection featuring rich espresso blends, creamy lattes, and festive flavors. Crafted with premium espresso and your choice of milk.
+        </p>
+        <a href="menu.html" class="btn btn-light-outline">Order Now</a>
+      </div>
+    </section>
+
+    <!-- Box C -->
+    <section class="box box-c bg-secondary grid-col-2 grid-reversed">
+      <img src="img/box-c.png" alt="Food Item" />
+      <div class="box-text">
+        <h2 class="text-xl">Fresh Pastries & Snacks</h2>
+        <p class="text-md">
+          Pair your perfect coffee with our selection of freshly baked pastries, sandwiches, and snacks. Made fresh daily in our stores.
+        </p>
+        <a href="menu.html" class="btn btn-light-outline">Order Now</a>
+      </div>
+    </section>
+
+    <!-- Box D -->
+    <section class="box box-d bg-primary grid-col-2">
+      <img src="img/box-d.png" alt="Coffee Blend" />
+      <div class="box-text">
+        <h2 class="text-xl">Premium Coffee Blends</h2>
+        <p class="text-md">
+          Explore our signature roasts sourced from the world's premier coffee-growing regions. Every bean is carefully selected for quality and sustainability.
+        </p>
+        <a href="menu.html" class="btn btn-light-outline">Order Now</a>
+      </div>
+    </section>
+
+    <!-- Box E -->
+    <section class="box box-e bg-secondary grid-col-2 grid-reversed">
+      <img src="img/box-e.jpg" alt="Community" />
+      <div class="box-text">
+        <h2 class="text-md">Starbucks Commitment to Community</h2>
+        <p class="text-sm">
+          We believe in creating positive impact in every community we serve. Through our environmental initiatives and community programs, we're building a better future together.
+        </p>
+        <a href="store.html" class="btn btn-light-outline">Learn More</a>
+      </div>
+    </section>
+
+    <!-- Box F -->
+    <section class="box box-f grid-col-2">
+      <div>
+        <img src="img/box-f1.jpg" alt="Delivery" />
+        <div class="bg-extra py-lg">
+          <div class="box-text">
+            <h2 class="text-md">Delivery Right to Your Door</h2>
+            <p class="text-sm">
+              Order your favorite Starbucks drinks and food via delivery apps. Available in select areas for your convenience.
+            </p>
+            <a href="menu.html" class="btn btn-dark-outline">Order Online</a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img src="img/box-f2.jpg" alt="Mobile App" />
+        <div class="bg-primary py-lg">
+          <div class="box-text">
+            <h2 class="text-md">Download the Starbucks App</h2>
+            <p class="text-sm">
+              Order ahead, earn rewards, and skip the line. Pay with your phone and enjoy exclusive mobile-only offers.
+            </p>
+            <a href="rewards.html" class="btn btn-light-outline">Download Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Testimonials Section -->
+    <section class="box bg-extra py-lg" style="padding: 50px 30px;">
+      <div class="box-inner" style="max-width: 1200px; margin: 0 auto;">
+        <h2 class="text-xl" style="text-align: center; color: #000; margin-bottom: 50px;">What Our Customers Say</h2>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+          <div class="testimonial-card" style="padding: 30px; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <div style="display: flex; margin-bottom: 15px; color: #ffc107;">
+              ⭐⭐⭐⭐⭐
+            </div>
+            <p style="color: #666; font-size: 15px; line-height: 1.8; margin-bottom: 20px;">
+              "Starbucks is my go-to place every morning. The coffee is always consistent and the baristas are so friendly!"
+            </p>
+            <p style="color: #006241; font-weight: 700;">Sarah M.</p>
+            <p style="color: #999; font-size: 13px;">New York, NY</p>
+          </div>
+
+          <div class="testimonial-card" style="padding: 30px; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <div style="display: flex; margin-bottom: 15px; color: #ffc107;">
+              ⭐⭐⭐⭐⭐
+            </div>
+            <p style="color: #666; font-size: 15px; line-height: 1.8; margin-bottom: 20px;">
+              "The Rewards program is amazing! I've already earned two free drinks this month. Highly recommend!"
+            </p>
+            <p style="color: #006241; font-weight: 700;">James P.</p>
+            <p style="color: #999; font-size: 13px;">Los Angeles, CA</p>
+          </div>
+
+          <div class="testimonial-card" style="padding: 30px; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <div style="display: flex; margin-bottom: 15px; color: #ffc107;">
+              ⭐⭐⭐⭐⭐
+            </div>
+            <p style="color: #666; font-size: 15px; line-height: 1.8; margin-bottom: 20px;">
+              "Perfect place to work or study. Great atmosphere, excellent WiFi, and the best coffee in town!"
+            </p>
+            <p style="color: #006241; font-weight: 700;">Emily R.</p>
+            <p style="color: #999; font-size: 13px;">Seattle, WA</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="box" style="background: #006241; color: #fff; padding: 50px 30px; margin: 0;">
+      <div class="box-inner" style="max-width: 700px; margin: 0 auto; text-align: center;">
+        <h2 class="text-xl" style="color: #fff; margin-bottom: 20px;">Stay in the Loop</h2>
+        <p class="text-md" style="color: #fff; opacity: 0.9; margin-bottom: 30px;">
+          Subscribe to our newsletter for exclusive offers, new drink recipes, and updates about our latest promotions.
+        </p>
+        
+        <form id="newsletter-form" style="display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; justify-content: center;">
+          <input 
+            type="email" 
+            id="newsletter-email"
+            placeholder="Enter your email" 
+            required
+            style="flex: 1; min-width: 200px; padding: 14px; border: none; border-radius: 4px; font-size: 14px; font-family: inherit;"
+          >
+          <button type="submit" class="btn btn-hero" style="padding: 14px 30px; background: #fff; color: #006241;">Subscribe</button>
+        </form>
+        
+        <p style="font-size: 13px; opacity: 0.8;">We respect your privacy. Unsubscribe at any time.</p>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="social">
+          <a href="https://spotify.com">
+            <img src="./img/social-spotify.svg" alt="" />
+          </a>
+          <a href="https://facebook.com">
+            <img src="./img/social-facebook.svg" alt="" />
+          </a>
+          <a href="https://pinterest.com">
+            <img src="./img/social-pinterest.svg" alt="" />
+          </a>
+          <a href="https://instagram.com">
+            <img src="./img/social-instagram.svg" alt="" />
+          </a>
+          <a href="https://youtube.com">
+            <img src="./img/social-youtube.svg" alt="" />
+          </a>
+          <a href="https://twitter.com">
+            <img src="./img/social-twitter.svg" alt="" />
+          </a>
+        </div>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 30px; margin: 30px 0; padding: 30px 0; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc;">
+          <div>
+            <h4 style="font-weight: 700; margin-bottom: 15px; color: #000;">Company</h4>
+            <ul style="list-style: none;">
+              <li style="margin-bottom: 8px;"><a href="careers.html" style="color: #666; text-decoration: none;">Careers</a></li>
+              <li style="margin-bottom: 8px;"><a href="privacy.html" style="color: #666; text-decoration: none;">Privacy Policy</a></li>
+              <li style="margin-bottom: 8px;"><a href="privacy.html" style="color: #666; text-decoration: none;">Terms</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 style="font-weight: 700; margin-bottom: 15px; color: #000;">Customer Service</h4>
+            <ul style="list-style: none;">
+              <li style="margin-bottom: 8px;"><a href="contact.html" style="color: #666; text-decoration: none;">Contact Us</a></li>
+              <li style="margin-bottom: 8px;"><a href="store.html" style="color: #666; text-decoration: none;">Find a Store</a></li>
+              <li style="margin-bottom: 8px;"><a href="gift-cards.html" style="color: #666; text-decoration: none;">Gift Cards</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 style="font-weight: 700; margin-bottom: 15px; color: #000;">Products</h4>
+            <ul style="list-style: none;">
+              <li style="margin-bottom: 8px;"><a href="menu.html" style="color: #666; text-decoration: none;">Menu</a></li>
+              <li style="margin-bottom: 8px;"><a href="rewards.html" style="color: #666; text-decoration: none;">Rewards</a></li>
+              <li style="margin-bottom: 8px;"><a href="gift-cards.html" style="color: #666; text-decoration: none;">Corporate Gifts</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <p style="text-align: center; color: #666;">© 2025 Starbucks Coffee Company. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

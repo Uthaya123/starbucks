@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Menu - Starbucks Coffee Company</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <a href="index.html">
+                    <img src="img/logo.svg" alt="Starbucks" />
+                </a>
+            </div>
+
+            <ul class="navbar-nav-left">
+                <li>
+                    <a href="menu.html">Menu</a>
+                </li>
+                <li>
+                    <a href="rewards.html">Rewards</a>
+                </li>
+                <li>
+                    <a href="gift-cards.html">Gift Cards</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav-right">
+                <li>
+                    <a href="store.html">
+                        <img src="img/marker.svg" alt="" />
+                        <span>Find a store</span>
+                    </a>
+                </li>
+                <li><button class="btn btn-dark-outline">Sign in</button></li>
+                <li><button class="btn btn-dark">Join now</button></li>
+            </ul>
+
+            <button type="button" class="hamburger" id="menu-btn">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden" id="menu">
+        <ul>
+            <li>
+                <a href="menu.html">Menu</a>
+            </li>
+            <li>
+                <a href="rewards.html">Rewards</a>
+            </li>
+            <li>
+                <a href="gift-cards.html">Gift Cards</a>
+            </li>
+        </ul>
+
+        <div class="mobile-menu-bottom">
+            <button class="btn btn-dark-outline">Sign in</button>
+            <button class="btn btn-dark">Join now</button>
+            <div>
+                <a href="store.html">
+                    <img src="img/marker.svg" alt="" />
+                    <span>Find a store</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu Page Content -->
+    <section class="hero" style="background: linear-gradient(135deg, #006241 0%, #00a862 100%);">
+        <div class="hero-content">
+            <h1 class="hero-title">Our Menu</h1>
+            <p class="hero-subtitle">Explore our selection of coffee, tea, food and more</p>
+        </div>
+    </section>
+
+    <section class="box bg-extra py-lg" style="padding: 50px 30px;">
+        <div class="box-inner" style="max-width: 1200px; margin: 0 auto;">
+            <h2 class="text-xl" style="text-align: center; color: #000; margin-bottom: 40px;">Coffee & Espresso Drinks</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 60px;">
+                <div style="padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <h3 style="font-size: 20px; margin-bottom: 10px; color: #006241;">Caramel Macchiato</h3>
+                    <p style="color: #666; margin-bottom: 10px;">Espresso, steamed milk, vanilla syrup, and caramel drizzle</p>
+                    <p style="font-weight: bold; color: #000;">$5.45</p>
+                </div>
+
+                <div style="padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <h3 style="font-size: 20px; margin-bottom: 10px; color: #006241;">Iced Caramel Latte</h3>
+                    <p style="color: #666; margin-bottom: 10px;">Espresso, milk, ice, and a splash of caramel</p>
+                    <p style="font-weight: bold; color: #000;">$5.25</p>
+                </div>
+
+                <div style="padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <h3 style="font-size: 20px; margin-bottom: 10px; color: #006241;">Cappuccino</h3>
+                    <p style="color: #666; margin-bottom: 10px;">Espresso, steamed milk, and a rich layer of foam</p>
+                    <p style="font-weight: bold; color: #000;">$4.95</p>
+                </div>
+
+                <div style="padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <h3 style="font-size: 20px; margin-bottom: 10px; color: #006241;">Americano</h3>
+                    <p style="color: #666; margin-bottom: 10px;">Espresso shots topped with hot water</p>
+                    <p style="font-weight: bold; color: #000;">$3.95</p>
+                </div>
+
+                <div style="padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <h3 style="font-size: 20px; margin-bottom: 10px; color: #006241;">Vanilla Latte</h3>
+                    <p style="color: #666; margin-bottom: 10px;">Espresso, steamed milk, and vanilla syrup</p>
+                    <p style="font-weight: bold; color: #000;">$4.75</p>
+                </div>
+
+                <div style="padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <h3 style="font-size: 20px; margin-bottom: 10px; color: #006241;">Mocha</h3>
+                    <p style="color: #666; margin-bottom: 10px;">Espresso, steamed milk, mocha sauce, and whipped cream</p>
+                    <p style="font-weight: bold; color: #000;">$5.25</p>
+                </div>
+            </div>
+
+            <h2 class="text-xl" style="text-align: center; color: #000; margin-bottom: 40px;">Teas</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 60px;">
+                <div style="padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <h3 style="font-size: 20px; margin-bottom: 10px; color: #006241;">Green Tea Latte</h3>
+                    <p style="color: #666; margin-bottom: 10px;">Matcha green tea powder and steamed milk</p>
+                    <p style="font-weight: bold; color: #000;">$4.50</p>
+                </div>
+
+                <div style="padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <h3 style="font-size: 20px; margin-bottom: 10px; color: #006241;">London Fog Tea Latte</h3>
+                    <p style="color: #666; margin-bottom: 10px;">Black tea, steamed milk, and vanilla</p>
+                    <p style="font-weight: bold; color: #000;">$4.45</p>
+                </div>
+
+                <div style="padding: 20px; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <h3 style="font-size: 20px; margin-bottom: 10px; color: #006241;">Chai Tea Latte</h3>
+                    <p style="color: #666; margin-bottom: 10px;">Spiced chai tea, steamed milk, and honey</p>
+                    <p style="font-weight: bold; color: #000;">$4.45</p>
+                </div>
+            </div>
+
+            <div style="text-align: center;">
+                <a href="index.html" class="btn btn-dark" style="padding: 12px 30px;">Back to Home</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="social">
+                <a href="https://spotify.com">
+                    <img src="./img/social-spotify.svg" alt="" />
+                </a>
+                <a href="https://facebook.com">
+                    <img src="./img/social-facebook.svg" alt="" />
+                </a>
+                <a href="https://pinterest.com">
+                    <img src="./img/social-pinterest.svg" alt="" />
+                </a>
+                <a href="https://instagram.com">
+                    <img src="./img/social-instagram.svg" alt="" />
+                </a>
+                <a href="https://youtube.com">
+                    <img src="./img/social-youtube.svg" alt="" />
+                </a>
+                <a href="https://twitter.com">
+                    <img src="./img/social-twitter.svg" alt="" />
+                </a>
+            </div>
+            <p>© 2025 Starbucks Coffee Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
