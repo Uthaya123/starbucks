@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Register — Starbucks</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="navbar-brand">
+          <a href="index.html">
+            <img src="img/logo.svg" alt="Starbucks" />
+          </a>
+        </div>
+
+        <ul class="navbar-nav-left">
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="rewards.html">Rewards</a></li>
+          <li><a href="gift-cards.html">Gift Cards</a></li>
+        </ul>
+
+        <ul class="navbar-nav-right">
+          <li><a href="store.html"><img src="img/marker.svg" alt="" /><span>Find a store</span></a></li>
+          <li><a href="login.html" class="btn btn-dark-outline">Sign in</a></li>
+          <li><a href="registration.html" class="btn btn-dark">Join now</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main style="padding: 60px 20px; max-width: 700px; margin: 0 auto;">
+      <h1 style="text-align:center; margin-bottom: 20px;">Create your account</h1>
+
+      <form id="registration-form" style="display: grid; gap: 12px;">
+        <input type="text" id="reg-name" placeholder="Full name" required style="padding:12px; font-size:14px; border-radius:6px; border:1px solid #ccc;">
+        <input type="email" id="reg-email" placeholder="Email address" required style="padding:12px; font-size:14px; border-radius:6px; border:1px solid #ccc;">
+        <input type="password" id="reg-password" placeholder="Password" required style="padding:12px; font-size:14px; border-radius:6px; border:1px solid #ccc;">
+        <input type="password" id="reg-password-confirm" placeholder="Confirm password" required style="padding:12px; font-size:14px; border-radius:6px; border:1px solid #ccc;">
+
+        <button type="submit" class="btn btn-dark" style="padding:12px;">Create account</button>
+      </form>
+
+      <p style="text-align:center; margin-top:14px; color:#666; font-size:14px;">Already have an account? <a href="contact.html">Sign in</a></p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

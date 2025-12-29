@@ -156,6 +156,13 @@ section a {
   margin-right: 10px;
 }
 
+/* Left nav icon sizing to match right nav */
+.navbar-nav-left img {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+
 .navbar-nav-right li:nth-child(2) {
   margin: 0 5px;
 }
@@ -537,4 +544,38 @@ html {
   width: 100%;
   height: auto;
   object-fit: cover;
+}
+
+/* Registration Page Styles */
+#registration-form {
+  margin-top: 20px;
+}
+
+#registration-form input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  font-size: 15px;
+  background: #fff;
+}
+
+#registration-form input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 4px 12px rgba(0,98,65,0.08);
+}
+
+#registration-form .btn {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+@media (min-width: 768px) {
+  #registration-form {
+    max-width: 420px;
+    margin: 0 auto;
+  }
 }

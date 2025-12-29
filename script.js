@@ -41,6 +41,41 @@ if (newsletterForm) {
   });
 }
 
+  // Registration Form Submission
+  const registrationForm = document.getElementById('registration-form');
+  if (registrationForm) {
+    registrationForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('reg-name').value.trim();
+      const email = document.getElementById('reg-email').value.trim();
+      const password = document.getElementById('reg-password').value;
+      const confirm = document.getElementById('reg-password-confirm').value;
+
+      if (!name || !email || !password) {
+        alert('Please fill out all required fields.');
+        return;
+      }
+
+      if (password !== confirm) {
+        alert('Passwords do not match.');
+        return;
+      }
+
+      const users = JSON.parse(localStorage.getItem('users') || '[]');
+      if (users.find(u => u.email === email)) {
+        alert('An account with this email already exists.');
+        return;
+      }
+
+      users.push({ name, email, password });
+      localStorage.setItem('users', JSON.stringify(users));
+
+      alert('Account created successfully!');
+      registrationForm.reset();
+      window.location.href = 'index.html';
+    });
+  }
+
 // Contact Form Submission
 const contactForm = document.getElementById('contact-form');
 if (contactForm) {
