@@ -44,38 +44,40 @@ if (newsletterForm) {
   // Registration Form Submission
   const registrationForm = document.getElementById('registration-form');
   if (registrationForm) {
-    registrationForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const name = document.getElementById('reg-name').value.trim();
-      const email = document.getElementById('reg-email').value.trim();
-      const password = document.getElementById('reg-password').value;
-      const confirm = document.getElementById('reg-password-confirm').value;
+  registrationForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const name = document.getElementById('reg-name').value.trim();
+    const email = document.getElementById('reg-email').value.trim();
+    const password = document.getElementById('reg-password').value;
+    const confirmPassword = document.getElementById('reg-password-confirm').value;
 
-      if (!name || !email || !password) {
-        alert('Please fill out all required fields.');
-        return;
+    if (!name || !email || !password) {
+      alert('Please fill out all required fields.');
+      return;
+    }
+
+    try {
+      const response = await fetch('http://localhost:3000/api/register', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ name, email, password, confirmPassword })
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        alert('Account created successfully!');
+        registrationForm.reset();
+        window.location.href = 'index.html';
+      } else {
+        alert('Registration failed: ' + (data.error || 'Unknown error'));
       }
-
-      if (password !== confirm) {
-        alert('Passwords do not match.');
-        return;
-      }
-
-      const users = JSON.parse(localStorage.getItem('users') || '[]');
-      if (users.find(u => u.email === email)) {
-        alert('An account with this email already exists.');
-        return;
-      }
-
-      users.push({ name, email, password });
-      localStorage.setItem('users', JSON.stringify(users));
-
-      alert('Account created successfully!');
-      registrationForm.reset();
-      window.location.href = 'index.html';
-    });
-  }
-
+    } catch (err) {
+      alert('Error: Could not connect to server. Make sure it is running on http://localhost:3000');
+      console.error('Registration error:', err);
+    }
 // Contact Form Submission
 const contactForm = document.getElementById('contact-form');
 if (contactForm) {
